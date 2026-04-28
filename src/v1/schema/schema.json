@@ -1,0 +1,133 @@
+{
+    "query": {
+        "findAll": {
+            "args": [],
+            "desc": "Retrieve all rows from the table",
+            "example": [
+                "",
+                "const tableData = table.query.findAll();",
+                "",
+                "console.log('Table Data:', tableData);"
+            ]
+        },
+        "findByPk": {
+            "args": [
+                "pk"
+            ],
+            "desc": "Retrieve a single row by primary key",
+            "example": [
+                "const table = kschema.table('LedgerNames');",
+                "const row = table.query.findByPk(1);",
+                "console.log('Row by PK:', row);"
+            ]
+        },
+        "filterByPk": {
+            "args": [
+                "pk"
+            ],
+            "desc": "Filter rows matching primary key",
+            "example": [
+                "const table = kschema.table('LedgerNames');",
+                "const rows = table.query.filterByPk(1);",
+                "console.log('Filtered Rows (PK):', rows);"
+            ]
+        },
+        "filterByColumns": {
+            "args": [
+                "where"
+            ],
+            "desc": "Filter rows using column conditions",
+            "example": [
+                "const table = kschema.table('LedgerNames');",
+                "const rows = table.query.filterByColumns({ name: 'Cash' });",
+                "console.log('Filtered Rows (Columns):', rows);"
+            ]
+        },
+        "aggregate": {
+            "count": {
+                "args": [
+                    "column?"
+                ],
+                "desc": "Count rows or values of a column",
+                "example": [
+                    "const table = kschema.table('LedgerNames');",
+                    "const total = table.query.aggregate.count();",
+                    "console.log('Total Rows Count:', total);"
+                ]
+            }
+        }
+    },
+    "mutate": {
+        "insertAsIs": {
+            "args": [
+                "record"
+            ],
+            "desc": "Insert record without modification",
+            "example": [
+                "const insertedRow = table.mutate.insertAsIs({ LedgerName: 'KeshavSoft' });",
+                "",
+                "console.log('Inserted record as insertAsIs : ', insertedRow);"
+            ]
+        },
+        "insertFlat": {
+            "args": [
+                "record"
+            ],
+            "desc": "Insert flattened record",
+            "example": [
+                "const table = kschema.table('LedgerNames');",
+                "table.mutate.insertFlat({ name: 'Bank' });",
+                "console.log('Inserted flat record');"
+            ]
+        },
+        "insertGenPk": {
+            "args": [
+                "record"
+            ],
+            "desc": "Insert record with auto-generated primary key",
+            "example": [
+                "const insertedRow = table.mutate.insertGenPk({ LedgerName: 'KeshavSoft' });",
+                "",
+                "console.log('Inserted record as insertGenPk : ', insertedRow);"
+            ]
+        },
+        "insertWithChecks": {
+            "args": [
+                "record"
+            ],
+            "desc": "Insert record with validation checks",
+            "example": [
+                "try {",
+                "\tconst fromInserted = table.mutate.insertWithChecks({ LedgerName: 'Keshav' });",
+                "",
+                "\tconsole.log('fromInserted : ', fromInserted);",
+                "} catch (err) {",
+                "\tconsole.log(err.message);",
+                "};"
+            ]
+        },
+        "deleteWithChecks": {
+            "args": [
+                "pk"
+            ],
+            "desc": "Delete record by primary key with validation",
+            "example": [
+                "const table = kschema.table('LedgerNames');",
+                "table.mutate.deleteWithChecks(1);",
+                "console.log('Deleted record with checks');"
+            ]
+        },
+        "updateWithChecks": {
+            "args": [
+                "pk",
+                "record"
+            ],
+            "desc": "Update record by primary key with validation",
+            "example": [
+                "const table = kschema.table('LedgerNames');",
+                "table.mutate.updateWithChecks(1, { name: 'Updated Ledger' });",
+                "console.log('Updated record with checks');"
+            ]
+        }
+    }
+}
