@@ -1,32 +1,30 @@
 {
-  "name": "@keshavsoft/tallyExtract",
-  "version": "1.1.1",
+  "name": "@keshavsoft/tallyextract",
+  "version": "1.1.2",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
+
   "exports": {
     ".": "./index.js",
-    "./v1": "./src/v1/index.js",
-    "./v2": "./src/v2/index.js",
-    "./v4": "./src/v4/index.js",
-    "./v5": "./src/v5/index.js",
-    "./v6": "./src/v6/index.js",
-    "./v7": "./src/v7/index.js",
-    "./v8": "./src/v8/index.js"
+    "./v1": "./src/v1/index.js"
   },
+
   "files": [
     "src",
     "index.js",
+    "index.d.ts",
     "README.md",
     "LICENSE"
   ],
+
   "homepage": "https://keshavsoft.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/keshavsoft/kschema"
+    "url": "https://github.com/keshavsoft/tallyExtract"
   },
   "bugs": {
-    "url": "https://github.com/keshavsoft/kschema/issues"
+    "url": "https://github.com/keshavsoft/tallyExtract/issues"
   }
 }
