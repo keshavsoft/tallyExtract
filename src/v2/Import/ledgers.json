@@ -1,8 +1,0 @@
-{
-    "static_variables": [
-        {
-            "name": "svExportFormat",
-            "value": "jsonex"
-        }
-    ]
-}
