@@ -1,0 +1,17 @@
+{
+    "static_variables": [
+        {
+            "name": "svExportFormat",
+            "value": "jsonex"
+        },
+        {
+            "name": "svCurrentCompany",
+            "value": "Mani9"
+        }
+    ],
+    "fetch_List": [
+        "Name",
+        "Parent",
+        "Closing Balance"
+    ]
+}

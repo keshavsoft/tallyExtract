@@ -33,7 +33,7 @@ All notable changes to this project will be documented in this file.
 
 ### filer and find columns perfect
 
-## [1.7.4]
+## [1.2.3] - 2026-05-05
 
-### delete multi added
+### tally import voucher started
 

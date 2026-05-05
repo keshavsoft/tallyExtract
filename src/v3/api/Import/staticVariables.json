@@ -1,0 +1,12 @@
+{
+    "static_variables": [
+        {
+            "name": "svExportFormat",
+            "value": "jsonex"
+        },
+        {
+            "name": "svCurrentCompany",
+            "value": "Mani"
+        }
+    ]
+}
