@@ -37,3 +37,7 @@ All notable changes to this project will be documented in this file.
 
 ### tally import voucher started
 
+## [1.4.1] - 2026-05-05
+
+### tally import voucher perfect from pkg
+
