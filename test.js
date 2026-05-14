@@ -1,4 +1,4 @@
-import { importVoucher } from "./src/v6/api/importVoucher.js";
+import { importVoucher } from "./src/v7/api/importVoucher.js";
 
 import BillsTableJson from "./Data/BillsTable.json" with {type: "json"};
 import ItemsTableJson from "./Data/ItemsTable.json" with {type: "json"};

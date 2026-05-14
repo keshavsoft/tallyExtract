@@ -45,3 +45,7 @@ All notable changes to this project will be documented in this file.
 
 ### tally import voucher perfect with day book and gst1 also,
 test.js added in route for test from Data folder
+
+## [1.7.2] - 2026-05-14
+
+### tested from ordermanv11 also with pkg
