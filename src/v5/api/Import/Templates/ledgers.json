@@ -1,0 +1,28 @@
+{
+    "oldauditentryids": [
+        {
+            "metadata": true,
+            "type": "Number"
+        },
+        "-1"
+    ],
+    "roundtype": "\u0004 Not Applicable",
+    "ledgername": "SGST Output",
+    "methodtype": "GST",
+    "gstclass": "\u0004 Not Applicable",
+    "isdeemedpositive": false,
+    "ledgerfromitem": false,
+    "removezeroentries": true,
+    "ispartyledger": false,
+    "gstoverridden": false,
+    "isgstassessablevalueoverridden": false,
+    "strdisgstapplicable": false,
+    "strdgstispartyledger": false,
+    "strdgstisdutyledger": false,
+    "contentnegispos": false,
+    "islastdeemedpositive": false,
+    "iscapvattaxaltered": false,
+    "iscapvatnotclaimed": false,
+    "amount": "90.00",
+    "vatexpamount": "90.00"
+}
