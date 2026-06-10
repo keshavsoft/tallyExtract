@@ -3,3 +3,4 @@ export { ledger } from "./ledger.js";
 export { stockItems } from "./stockitems.js";
 
 export { importVoucher } from "./importVoucher.js";
+export { importVoucherV1 } from "./importVoucherV1.js";

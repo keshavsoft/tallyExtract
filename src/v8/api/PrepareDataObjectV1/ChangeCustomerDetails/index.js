@@ -1,26 +1,20 @@
-import { startFunc as ForLedger } from "./ForLedger/entryFile.js";
-import { startFunc as ForInventory } from "./ForInventory/entryFile.js";
-import changeCustomerDetails from "./ChangeCustomerDetails/index.js";
-
 const startFunc = ({ inTallyJson, inClientData }) => {
     try {
         let data = inTallyJson;
 
         const LocalClientData = inClientData;
 
-        const LocalInventoryItem = ForInventory({ inItemsJsonAsArray: LocalClientData.allinventoryentries });
-
-        const LocalLedgerItem = ForLedger({
-            inItemsJsonAsArray: LocalClientData.allinventoryentries,
-            inLedgerDetails: LocalClientData.customerDetails
-        });
-
         changeCustomerDetails({
-            inTallyJson, inClientData
+            inLedgerName: LocalClientData.customerDetails.LedgerName,
+            inData: data,
+            inGstregistrationtype: LocalClientData.customerDetails.GstRegistrationType,
+            inPartygstin: LocalClientData.customerDetails.PartyGSTIN
         });
 
-        data.tallymessage[0].allinventoryentries = LocalInventoryItem;
-        data.tallymessage[0].ledgerentries = LocalLedgerItem;
+        changeVoucherDate({
+            inData: data,
+            inDate: LocalClientData.customerDetails.InvoiceDate
+        });
 
         return data;
     } catch (err) {
@@ -29,7 +23,7 @@ const startFunc = ({ inTallyJson, inClientData }) => {
     };
 };
 
-const changeCustomerDetails1 = ({ inLedgerName, inData }) => {
+const changeCustomerDetails = ({ inLedgerName, inData, inGstregistrationtype, inPartygstin }) => {
     const CommonLedgerName = inLedgerName;
 
     inData.tallymessage[0].partyname = CommonLedgerName;
@@ -38,8 +32,8 @@ const changeCustomerDetails1 = ({ inLedgerName, inData }) => {
     inData.tallymessage[0].consigneemailingname = CommonLedgerName;
     inData.tallymessage[0].partymailingname = CommonLedgerName;
     inData.tallymessage[0].basicbasepartyname = CommonLedgerName;
-    inData.tallymessage[0].gstregistrationtype = "Regular";
-    inData.tallymessage[0].partygstin = "37BEVPS3045F1Z1";
+    inData.tallymessage[0].gstregistrationtype = inGstregistrationtype;
+    inData.tallymessage[0].partygstin = inPartygstin;
 };
 
 const changeVoucherDate = ({ inData, inDate }) => {
@@ -50,4 +44,4 @@ const changeVoucherDate = ({ inData, inDate }) => {
     inData.tallymessage[0].effectivedate = localDate;
 };
 
-export { startFunc };
+export default startFunc;
