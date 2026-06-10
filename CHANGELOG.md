@@ -49,3 +49,7 @@ test.js added in route for test from Data folder
 ## [1.7.2] - 2026-05-14
 
 ### tested from ordermanv11 also with pkg
+
+## [1.8.1] - 2026-06-10
+
+### stockitems send company input

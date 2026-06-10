@@ -1,5 +1,5 @@
 import { stockItems } from "../../src/v8/api/stockItems.js";
 
-const stockItemsData = stockItems();
-
-console.log("stockItemsData : ", stockItemsData);
+stockItems({ inSvCurrentCompany: "me" }).then(promiseData => {
+    console.log("stockItemsData : ", promiseData);
+});
