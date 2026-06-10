@@ -3,7 +3,7 @@ import prepareDataObject from "./PrepareDataObjectV1/entryFile.js";
 
 import { validateImportVoucherInput } from "./utils/validateInput.js";
 
-const importVoucher = async (inClientData) => {
+const importVoucherV1 = async (inClientData) => {
     validateImportVoucherInput(inClientData);   // 🔥 early fail
 
     const bodyToSend = prepareDataObject({ inClientData });
@@ -13,4 +13,4 @@ const importVoucher = async (inClientData) => {
     return await true;
 };
 
-export { importVoucher };
+export default importVoucherV1;
