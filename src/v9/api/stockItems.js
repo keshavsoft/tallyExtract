@@ -1,5 +1,5 @@
 import { sendToTally } from "../core/sendToTally.js";
 
-export function ledger() {
+export function stockItems() {
     return sendToTally("KeshavStockItems");
 };
