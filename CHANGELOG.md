@@ -53,3 +53,7 @@ test.js added in route for test from Data folder
 ## [1.8.1] - 2026-06-10
 
 ### stockitems send company input
+
+## [1.9.2] - 2026-06-16
+
+### stockitems send company input test and inex changed
