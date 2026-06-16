@@ -1,6 +1,6 @@
 {
   "name": "@keshavsoft/tallyextract",
-  "version": "1.9.2",
+  "version": "1.9.4",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
