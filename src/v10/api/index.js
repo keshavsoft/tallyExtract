@@ -7,3 +7,5 @@ export { ledgerV1 } from "./ledgerV1.js";
 
 export { importVoucher } from "./importVoucher.js";
 export { default as importVoucherV1 } from "./importVoucherV1.js";
+
+export { inventoryV1 } from "./inventory.js";
