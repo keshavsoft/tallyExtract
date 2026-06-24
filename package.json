@@ -1,16 +1,14 @@
 {
   "name": "@keshavsoft/tallyextract",
-  "version": "1.10.1",
+  "version": "1.11.1",
   "type": "module",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
-
   "exports": {
     ".": "./index.js",
     "./v1": "./src/v1/index.js"
   },
-
   "files": [
     "src",
     "index.js",
@@ -18,7 +16,6 @@
     "README.md",
     "LICENSE"
   ],
-
   "homepage": "https://keshavsoft.com",
   "repository": {
     "type": "git",
