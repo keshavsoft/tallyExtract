@@ -1,7 +1,5 @@
-import load from "../../../index.js";
+import { stockItemsV1 } from "../../../index.js";
 
-const api = await load();
-
-api.stockItems({}).then(promiseData => {
+stockItemsV1({ inSvCurrentCompany: "me" }).then(promiseData => {
     console.log("stockItemsData : ", promiseData);
 });
