@@ -1,4 +1,4 @@
-import { inventoryV1 } from "../../../index.js";
+import { allLedgerEntriesV1 } from "../../../index.js";
 
 const uniqueVchTypes = (inData) => {
     const uniqueVchTypes = [
@@ -10,26 +10,16 @@ const uniqueVchTypes = (inData) => {
     console.log(uniqueVchTypes);
 };
 
-const onlySales = (inData) => {
-
-    const purExpVouchers = inData.filter(element => {
-        return element.metadata.vchtype === "Sales";
-    });
-
-    console.log(purExpVouchers[0]);
-};
-
-
 const onlyPurExp = (inData) => {
     const purExpVouchers = inData.filter(element => {
         return element.metadata.vchtype === "Pur Exp";
     });
 
-    console.log(purExpVouchers[0].allledgerentries.length);
+    return purExpVouchers;
+    // console.log(purExpVouchers[0].allledgerentries.length);
 };
 
-
-inventoryV1({ inSvCurrentCompany: "me" }).then(promiseData => {
+allLedgerEntriesV1({ inSvCurrentCompany: "me" }).then(promiseData => {
     // console.log("inventoryV1 : ", promiseData.data.collection[0]);
 
     //     const uniqueVchTypes = [
@@ -38,12 +28,6 @@ inventoryV1({ inSvCurrentCompany: "me" }).then(promiseData => {
     //         )
     //     ];
     // uniqueVchTypes(promiseData.data.collection);
-    onlyPurExp(promiseData.data.collection);
-    // const purExpVouchers = promiseData.data.collection.filter(element => {
-    //     return element.metadata.vchtype === "Pur Exp";
-    // });
-
-
-    // console.log(purExpVouchers[0]);
-
+    const purExpVouchers = onlyPurExp(promiseData.data.collection);
+    fs.writeFileSync("purExpVouchers.json", JSON.stringify(purExpVouchers));
 });

@@ -13,3 +13,4 @@ export { default as stockItemsV2 } from "./Masters/stockItems.js";
 export { inventoryV1 } from "./Entries/inventory.js";
 
 export { default as ledgersV2 } from "./Masters/ledgers.js";
+export { default as allLedgerEntriesV1 } from "./Entries/allLedgerEntries.js";
