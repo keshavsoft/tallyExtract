@@ -1,27 +1,18 @@
 import fs from "fs";
-import { allLedgerEntriesV1 } from "../../../index.js";
+import { allLedgerEntriesV2 } from "../../../index.js";
 
-const uniqueVchTypes = (inData) => {
-    const uniqueVchTypes = [
-        ...new Set(
-            inData.map(item => item.metadata.vchtype)
-        )
-    ];
-
-    console.log(uniqueVchTypes);
-};
-
-const onlyPurExp = (inData) => {
-    const purExpVouchers = inData.filter(element => {
-        return element.vchtype === "Pur Exp";
+const filterArray = (inData) => {
+    const filteredRows = inData.filter(element => {
+        return "allledgerentries" in element;
+        // return element.vchtype === "Pur Exp";
     });
 
-    return purExpVouchers;
+    return filteredRows;
     // console.log(purExpVouchers[0].allledgerentries.length);
 };
 
-allLedgerEntriesV1({ inSvCurrentCompany: "me" }).then(promiseData => {
-    const purExpVouchers = onlyPurExp(promiseData);
+allLedgerEntriesV2({ inSvCurrentCompany: "me" }).then(promiseData => {
+    const filteredRows = filterArray(promiseData);
 
-    fs.writeFileSync("purExpVouchers.json", JSON.stringify(purExpVouchers));
+    fs.writeFileSync("purExpVouchers.json", JSON.stringify(filteredRows));
 });
