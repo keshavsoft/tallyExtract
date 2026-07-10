@@ -1,3 +1,4 @@
+import fs from "fs";
 import { allLedgerEntriesV1 } from "../../../index.js";
 
 const uniqueVchTypes = (inData) => {
@@ -12,7 +13,7 @@ const uniqueVchTypes = (inData) => {
 
 const onlyPurExp = (inData) => {
     const purExpVouchers = inData.filter(element => {
-        return element.metadata.vchtype === "Pur Exp";
+        return element.vchtype === "Pur Exp";
     });
 
     return purExpVouchers;
@@ -20,14 +21,7 @@ const onlyPurExp = (inData) => {
 };
 
 allLedgerEntriesV1({ inSvCurrentCompany: "me" }).then(promiseData => {
-    // console.log("inventoryV1 : ", promiseData.data.collection[0]);
+    const purExpVouchers = onlyPurExp(promiseData);
 
-    //     const uniqueVchTypes = [
-    //         ...new Set(
-    //             promiseData.data.collection.map(item => item.metadata.vchtype)
-    //         )
-    //     ];
-    // uniqueVchTypes(promiseData.data.collection);
-    const purExpVouchers = onlyPurExp(promiseData.data.collection);
     fs.writeFileSync("purExpVouchers.json", JSON.stringify(purExpVouchers));
 });
