@@ -4,7 +4,7 @@ import { sendToTally } from "../../core/sendToTallyV1.js";
 export function inventoryV1({ inSvCurrentCompany }) {
 
     return sendToTally({
-        inTdlName: "KeshavPur",
+        inTdlName: "KeshavAllInventoryEntries",
         inSvCurrentCompany
     });
 };

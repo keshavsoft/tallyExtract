@@ -15,3 +15,5 @@ export { inventoryV1 } from "./Entries/inventory.js";
 export { default as ledgersV2 } from "./Masters/ledgers.js";
 export { default as allLedgerEntriesV1 } from "./Entries/allLedgerEntries.js";
 export { default as allLedgerEntriesV2 } from "./Entries/ledgerEntries/v2.js";
+
+export { default as inventoryV3 } from "./Entries/inventoryEntries/v3.js";

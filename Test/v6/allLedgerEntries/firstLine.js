@@ -1,7 +1,4 @@
-import fs from "fs";
 import { allLedgerEntriesV2 } from "../../../index.js";
-
-const jsonFileName = "allLedgerEntries.json";
 
 const filterArray = (inData) => {
     const filteredRows = inData.filter(element => {
@@ -15,5 +12,7 @@ const filterArray = (inData) => {
 allLedgerEntriesV2({ inSvCurrentCompany: "me" }).then(promiseData => {
     const filteredRows = filterArray(promiseData);
 
-    fs.writeFileSync(jsonFileName, JSON.stringify(filteredRows));
+    // console.log(filteredRows.length);
+    console.log(JSON.stringify(filteredRows[0], null, 4));
+    // fs.writeFileSync(jsonFileName, JSON.stringify(filteredRows));
 });
