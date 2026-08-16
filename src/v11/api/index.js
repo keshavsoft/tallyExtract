@@ -19,3 +19,4 @@ export { default as allLedgerEntriesV2 } from "./Entries/ledgerEntries/v2.js";
 export { default as inventoryV3 } from "./Entries/inventoryEntries/v3.js";
 
 export { default as inventoryV4 } from "./Entries/inventoryEntries/v4.js";
+export { default as inventoryV5 } from "./Entries/inventoryEntries/v5.js";
