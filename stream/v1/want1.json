@@ -1,0 +1,22 @@
+{
+    "date": "20260401",
+    "vchstatusdate": "20260401",
+    "guid": "56b158ca-11af-4ad5-bc28-c1c2428041b9-0002a85f",
+    "narration": "cash",
+    "vouchertypename": "Slip Receipt",
+    "partyledgername": "Koda Ramana (Pudimadaka)",
+    "vouchernumber": "1",
+    "numberingstyle": "Auto Retain",
+    "fbtpaymenttype": "Default",
+    "persistedview": "Accounting Voucher View",
+    "vchstatustaxadjustment": "Default",
+    "vchstatusvouchertype": "Slip Receipt",
+    "effectivedate": "20260401",
+    "alterid": " 253639",
+    "masterid": " 174175",
+    "voucherkey": "198049531953166",
+    "voucherretainkey": "9369",
+    "vouchernumberseries": "Default",
+    "allledgerentries": "Array",
+    "allinventoryentries": "Expand"
+}
