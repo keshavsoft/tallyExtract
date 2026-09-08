@@ -1,0 +1,126 @@
+{
+    "tallymessage": [
+        {
+            "metadata": {
+                "type": "Voucher",
+                "action": "Create",
+                "objview": "Invoice Voucher View"
+            },
+            "date": "20260908",
+            "vchstatusdate": "20260908",
+            "gstregistrationtype": "Unregistered/Consumer",
+            "vatdealertype": "Unregistered",
+            "statename": "Andhra Pradesh",
+            "countryofresidence": "India",
+            "vouchertypename": "Sales/E",
+            "partyname": "Cash",
+            "partyledgername": "Cash",
+            "basicbuyername": "Cash",
+            "partymailingname": "Cash",
+            "consigneemailingname": "Cash",
+            "consigneestatename": "Andhra Pradesh",
+            "consigneecountryname": "India",
+            "basicbasepartyname": "Cash",
+            "numberingstyle": "Auto Retain",
+            "fbtpaymenttype": "Default",
+            "persistedview": "Invoice Voucher View",
+            "vchstatusvouchertype": "Sales",
+            "vchentrymode": "Item Invoice",
+            "effectivedate": "20260908",
+            "hascashflow": true,
+            "isinvoice": true,
+            "vouchernumberseries": "Default",
+            "allinventoryentries": [
+                {
+                    "stockitemname": "Viaadi Hooks",
+                    "gstovrdnistaxonmrpapplicable": "\u0004 Not Applicable",
+                    "isdeemedpositive": false,
+                    "isrcmapplicable": false,
+                    "isgstassessablevalueoverridden": false,
+                    "strdisgstapplicable": false,
+                    "contentnegispos": false,
+                    "islastdeemedpositive": false,
+                    "isautonegate": false,
+                    "iscustomsclearance": false,
+                    "istrackcomponent": false,
+                    "istrackproduction": false,
+                    "isprimaryitem": false,
+                    "isscrap": false,
+                    "rate": "100.00/Nos",
+                    "amount": "1000.00",
+                    "actualqty": " 10 Nos",
+                    "billedqty": " 10 Nos",
+                    "batchallocations": [
+                        {
+                            "godownname": "Main Location",
+                            "batchname": "00-Rs.8.85",
+                            "destinationgodownname": "Main Location",
+                            "amount": "500.00",
+                            "actualqty": " 5 Nos",
+                            "billedqty": " 5 Nos"
+                        },
+                        {
+                            "godownname": "Nalam Godown",
+                            "batchname": "00-Rs.8.85",
+                            "destinationgodownname": "Nalam Godown",
+                            "amount": "500.00",
+                            "actualqty": " 5 Nos",
+                            "billedqty": " 5 Nos"
+                        }
+                    ],
+                    "accountingallocations": [
+                        {
+                            "oldauditentryids": [
+                                {
+                                    "metadata": true,
+                                    "type": "Number"
+                                },
+                                "-1"
+                            ],
+                            "ledgername": "Sales",
+                            "amount": "1000.00"
+                        }
+                    ]
+                }
+            ],
+            "ledgerentries": [
+                {
+                    "oldauditentryids": [
+                        {
+                            "metadata": true,
+                            "type": "Number"
+                        },
+                        "-1"
+                    ],
+                    "ledgername": "3F Industries Ltd",
+                    "gstclass": "\u0004 Not Applicable",
+                    "gstovrdnistaxonmrpapplicable": "\u0004 Not Applicable",
+                    "isdeemedpositive": true,
+                    "ledgerfromitem": false,
+                    "removezeroentries": false,
+                    "isrcmapplicable": false,
+                    "issystem": false,
+                    "ispartyledger": true,
+                    "gstoverridden": false,
+                    "isgstassessablevalueoverridden": false,
+                    "strdisgstapplicable": false,
+                    "strdgstispartyledger": false,
+                    "strdgstisdutyledger": false,
+                    "contentnegispos": false,
+                    "islastdeemedpositive": true,
+                    "iscapvattaxaltered": false,
+                    "iscapvatnotclaimed": false,
+                    "amount": "-1000.00",
+                    "billallocations": [
+                        {
+                            "name": "413",
+                            "billtype": "New Ref",
+                            "tdsdeducteeisspecialrate": false,
+                            "amount": "-1000.00"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
