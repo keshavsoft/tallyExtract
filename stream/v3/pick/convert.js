@@ -43,7 +43,6 @@ const forInventoryentriesin = ({ inInventoryentriesin, inLocalVoucherDetails }) 
 
     const inventoryKey = "inventoryentriesin";
 
-
     if (!Array.isArray(localInventoryentriesin)) return [];
 
     return localInventoryentriesin.flatMap(inEntry => {
@@ -78,6 +77,8 @@ const forInventoryentriesout = ({ inInventoryentriesout, inLocalVoucherDetails }
     const localInventoryentriesout = inInventoryentriesout;
     const localLocalVoucherDetails = inLocalVoucherDetails;
 
+    const inventoryKey = "inventoryentriesout";
+
     if (!Array.isArray(localInventoryentriesout)) return [];
 
     return localInventoryentriesout.flatMap(inEntry => {
@@ -85,7 +86,7 @@ const forInventoryentriesout = ({ inInventoryentriesout, inLocalVoucherDetails }
         const { batchallocations, ...localEntryDetails } = localEntry;
 
         const localEntryPrefixed = Object.fromEntries(
-            Object.entries(localEntryDetails).map(([key, value]) => [`inventoryentriesout.${key}`, value])
+            Object.entries(localEntryDetails).map(([key, value]) => [`${inventoryKey}.${key}`, value])
         );
 
         if (!Array.isArray(batchallocations)) return [];
@@ -94,7 +95,7 @@ const forInventoryentriesout = ({ inInventoryentriesout, inLocalVoucherDetails }
             const localBatch = inBatch;
 
             const localBatchPrefixed = Object.fromEntries(
-                Object.entries(localBatch).map(([key, value]) => [`inventoryentriesout.batchallocations.${key}`, value])
+                Object.entries(localBatch).map(([key, value]) => [`${inventoryKey}.batchallocations.${key}`, value])
             );
 
             // Merge properties from each step with step keys
@@ -144,16 +145,31 @@ function flattenInventoryBatchAllocations({ inData }) {
 
         let inwardQty = 0;
         let outwardQty = 0;
+        let stockitemname = "";
+        let godownname = "";
+        let batchname = "";
+
+        stockitemname = element["allinventoryentries.stockitemname"];
+        godownname = element["allinventoryentries.batchallocations.godownname"];
+        batchname = element["allinventoryentries.batchallocations.batchname"];
 
         if (inwardVouchers.includes(element.vouchertypename.trim())) {
             inwardQty += qty;
         };
 
         if (qtyIn !== 0) {
+            stockitemname = element["inventoryentriesin.stockitemname"];
+            godownname = element["inventoryentriesin.batchallocations.godownname"];
+            batchname = element["inventoryentriesin.batchallocations.batchname"];
+
             inwardQty += qtyIn;
         };
 
         if (qtyOut !== 0) {
+            stockitemname = element["inventoryentriesout.stockitemname"];
+            godownname = element["inventoryentriesout.batchallocations.godownname"];
+            batchname = element["inventoryentriesout.batchallocations.batchname"];
+
             outwardQty += qtyOut;
         };
 
@@ -166,11 +182,11 @@ function flattenInventoryBatchAllocations({ inData }) {
             "vouchertypename": element.vouchertypename,
             "date": element.date,
             "vouchernumber": element.vouchernumber,
-            "stockitemname": element["allinventoryentries.stockitemname"],
+            stockitemname,
             "qty": qty,
             "uom": uom,
-            "godownname": element["allinventoryentries.batchallocations.godownname"],
-            "batchname": element["allinventoryentries.batchallocations.batchname"],
+            godownname,
+            batchname,
             "inwardQty": inwardQty,
             "outwardQty": outwardQty
         }
