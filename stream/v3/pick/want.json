@@ -1,0 +1,94 @@
+{
+    "rootKeys": {
+        "date": "20260401",
+        "vouchertypename": "Slip Receipt",
+        "partyledgername": "Koda Ramana (Pudimadaka)",
+        "vouchernumber": "1",
+        "allinventoryentries": "Expand",
+        "inventoryentriesin": "Expand",
+        "inventoryentriesout": "Expand"
+    },
+    "ArrayKeys": [
+        {
+            "allinventoryentries": {
+                "keys": {
+                    "stockitemname": "",
+                    "rate": "",
+                    "amount": "",
+                    "actualqty": "",
+                    "billedqty": "",
+                    "batchallocations": "Expand"
+                },
+                "ArrayKeys": [
+                    {
+                        "batchallocations": {
+                            "keys": {
+                                "mfdon": "20210723",
+                                "godownname": "Main Location",
+                                "batchname": "Rishi-Rs.205/-",
+                                "destinationgodownname": "Main Location",
+                                "amount": "1000.00",
+                                "actualqty": " 3.560 kgs",
+                                "billedqty": " 3.560 kgs"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "inventoryentriesin": {
+                "keys": {
+                    "stockitemname": "",
+                    "rate": "",
+                    "amount": "",
+                    "actualqty": "",
+                    "billedqty": "",
+                    "batchallocations": "Expand"
+                },
+                "ArrayKeys": [
+                    {
+                        "batchallocations": {
+                            "keys": {
+                                "mfdon": "20210723",
+                                "godownname": "Main Location",
+                                "batchname": "Rishi-Rs.205/-",
+                                "destinationgodownname": "Main Location",
+                                "amount": "1000.00",
+                                "actualqty": " 3.560 kgs",
+                                "billedqty": " 3.560 kgs"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "inventoryentriesout": {
+                "keys": {
+                    "stockitemname": "",
+                    "rate": "",
+                    "amount": "",
+                    "actualqty": "",
+                    "billedqty": "",
+                    "batchallocations": "Expand"
+                },
+                "ArrayKeys": [
+                    {
+                        "batchallocations": {
+                            "keys": {
+                                "mfdon": "20210723",
+                                "godownname": "Main Location",
+                                "batchname": "Rishi-Rs.205/-",
+                                "destinationgodownname": "Main Location",
+                                "amount": "1000.00",
+                                "actualqty": " 3.560 kgs",
+                                "billedqty": " 3.560 kgs"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
