@@ -1,0 +1,37 @@
+{
+    "tallymessage": [
+        {
+            "metadata": {
+                "type": "Voucher",
+                "action": "Create",
+                "objview": "Invoice Voucher View"
+            },
+            "date": "20260909",
+            "vchstatusdate": "20260909",
+            "gstregistrationtype": "Unregistered/Consumer",
+            "vatdealertype": "Unregistered",
+            "statename": "Andhra Pradesh",
+            "countryofresidence": "India",
+            "vouchertypename": "Sales/E",
+            "partyname": "Cash",
+            "partyledgername": "Cash",
+            "basicbuyername": "Cash",
+            "partymailingname": "Cash",
+            "consigneemailingname": "Cash",
+            "consigneestatename": "Andhra Pradesh",
+            "consigneecountryname": "India",
+            "basicbasepartyname": "Cash",
+            "numberingstyle": "Auto Retain",
+            "fbtpaymenttype": "Default",
+            "persistedview": "Invoice Voucher View",
+            "vchstatusvouchertype": "Sales",
+            "vchentrymode": "Item Invoice",
+            "effectivedate": "20260909",
+            "hascashflow": true,
+            "isinvoice": true,
+            "vouchernumberseries": "Default",
+            "allinventoryentries": [],
+            "ledgerentries": []
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "stockitemname": "Viaadi Hooks",
+    "gstovrdnistaxonmrpapplicable": "\u0004 Not Applicable",
+    "isdeemedpositive": false,
+    "rate": "100.00/Nos",
+    "amount": "1000.00",
+    "actualqty": " 10 Nos",
+    "billedqty": " 10 Nos",
+    "batchallocations": [
+        {
+            "godownname": "Main Location",
+            "batchname": "00-Rs.8.85",
+            "destinationgodownname": "Main Location",
+            "amount": "500.00",
+            "actualqty": " 5 Nos",
+            "billedqty": " 5 Nos"
+        },
+        {
+            "godownname": "Nalam Godown",
+            "batchname": "00-Rs.8.85",
+            "destinationgodownname": "Nalam Godown",
+            "amount": "500.00",
+            "actualqty": " 5 Nos",
+            "billedqty": " 5 Nos"
+        }
+    ],
+    "accountingallocations": [
+        {
+            "oldauditentryids": [
+                {
+                    "metadata": true,
+                    "type": "Number"
+                },
+                "-1"
+            ],
+            "ledgername": "Sales",
+            "amount": "1000.00"
+        }
+    ]
+}

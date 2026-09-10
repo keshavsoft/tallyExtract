@@ -1,0 +1,20 @@
+{
+    "oldauditentryids": [
+        {
+            "metadata": true,
+            "type": "Number"
+        },
+        "-1"
+    ],
+    "ledgername": "3F Industries Ltd",
+    "isdeemedpositive": true,
+    "amount": "-1000.00",
+    "billallocations": [
+        {
+            "name": "413",
+            "billtype": "New Ref",
+            "tdsdeducteeisspecialrate": false,
+            "amount": "-1000.00"
+        }
+    ]
+}
