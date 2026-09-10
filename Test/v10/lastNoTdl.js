@@ -5,8 +5,8 @@ const getLastVoucher = async (url = "http://localhost:9000") => {
             "Content-Type": "application/json",
             "Version": "1",
             "TallyRequest": "Export",
-            "Type": "Collection",
-            "Id": "Keshav1"
+            "Type": "Data",
+            "Id": "Vouchers"
         },
         body: JSON.stringify({
             "static_variables": [
@@ -20,7 +20,7 @@ const getLastVoucher = async (url = "http://localhost:9000") => {
                     "definitions": [
                         {
                             "collection": {
-                                "name": "Keshav1",
+                                "name": "Vouchers",
                                 "attributes": [
                                     {
                                         "key": "Type",

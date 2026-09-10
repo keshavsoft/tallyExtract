@@ -1,7 +1,4 @@
-
-
-const getCompanyName = async (url = "http://localhost:9000") => {
-    const xml = `
+const xml = `
 <ENVELOPE>
     <HEADER>
         <VERSION>1</VERSION>
@@ -28,6 +25,8 @@ const getCompanyName = async (url = "http://localhost:9000") => {
     </BODY>
 </ENVELOPE>`;
 
+
+const startFunc = async (url = "http://localhost:9000") => {
     const res = await fetch(url, {
         method: "POST",
         headers: {
@@ -39,4 +38,4 @@ const getCompanyName = async (url = "http://localhost:9000") => {
     return await res.text();
 };
 
-getCompanyName().then(console.log);
+export default startFunc;
