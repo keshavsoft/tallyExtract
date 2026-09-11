@@ -1,0 +1,1227 @@
+{
+    "ENVELOPE": {
+        "HEADER": {
+            "VERSION": 1,
+            "STATUS": 1
+        },
+        "BODY": {
+            "DESC": {
+                "CMPINFO": {
+                    "COMPANY": 0,
+                    "GROUP": 0,
+                    "LEDGER": 0,
+                    "COSTCATEGORY": 0,
+                    "COSTCENTRE": 0,
+                    "GODOWN": 0,
+                    "STOCKGROUP": 0,
+                    "STOCKCATEGORY": 0,
+                    "STOCKITEM": 0,
+                    "VOUCHERTYPE": 0,
+                    "CURRENCY": 0,
+                    "UNIT": 0,
+                    "BUDGET": 0,
+                    "CLIENTRULE": 0,
+                    "SERVERRULE": 0,
+                    "STATE": 0,
+                    "TDSRATE": 0,
+                    "TAXCLASSIFICATION": 0,
+                    "STCATEGORY": 0,
+                    "DEDUCTEETYPE": 0,
+                    "ATTENDANCETYPE": 0,
+                    "FBTCATEGORY": 0,
+                    "FBTASSESSEETYPE": 0,
+                    "TARIFFCLASSIFICATION": 0,
+                    "EXCISEDUTYCLASSIFICATION": 0,
+                    "SERIALNUMBER": 0,
+                    "ADJUSTMENTCLASSIFICATION": 0,
+                    "INCOMETAXSLAB": 0,
+                    "INCOMETAXCLASSIFICATION": 0,
+                    "LBTCLASSIFICATION": 0,
+                    "TAXUNIT": 0,
+                    "RETURNMASTER": 0,
+                    "GSTCLASSIFICATION": 0,
+                    "VOUCHERNUMBERSERIES": 0,
+                    "VOUCHER": 0
+                }
+            },
+            "DATA": {
+                "COLLECTION": {
+                    "VOUCHERTYPE": [
+                        {
+                            "PARENT": {
+                                "#text": "Purchase",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "0% Purchase",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "0% Purchase",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Attendance",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Attendance",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Attendance",
+                            "@_RESERVEDNAME": "Attendance"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Payment",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Bank Payment",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Bank Payment",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Receipt",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Bank Receipt",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Bank Receipt",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Sales",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "BC Sales",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "BC Sales",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Contra",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Contra",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Contra",
+                            "@_RESERVEDNAME": "Contra"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Credit Note",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Credit Note",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Credit Note",
+                            "@_RESERVEDNAME": "Credit Note"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Credit Note",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Credit Note/slip",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Credit Note/slip",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Debit Note",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Debit Note",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Debit Note",
+                            "@_RESERVEDNAME": "Debit Note"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Delivery Note",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Delivery Note",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Delivery Note",
+                            "@_RESERVEDNAME": "Delivery Note"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Sales Order",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Estimate",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Estimate",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Job Work In Order",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Job Work In Order",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Job Work In Order",
+                            "@_RESERVEDNAME": "Job Work In Order"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Job Work Out Order",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Job Work Out Order",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Job Work Out Order",
+                            "@_RESERVEDNAME": "Job Work Out Order"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Journal",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Journal",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Journal",
+                            "@_RESERVEDNAME": "Journal"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Material In",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Material In",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Material In",
+                            "@_RESERVEDNAME": "Material In"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Material Out",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Material Out",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Material Out",
+                            "@_RESERVEDNAME": "Material Out"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Memorandum",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Memorandum",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Memorandum",
+                            "@_RESERVEDNAME": "Memorandum"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Payment",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Payment",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Payment",
+                            "@_RESERVEDNAME": "Payment"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Payroll",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Payroll",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Payroll",
+                            "@_RESERVEDNAME": "Payroll"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Physical Stock",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Physical Stock",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Physical Stock",
+                            "@_RESERVEDNAME": "Physical Stock"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Sales",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Proforma Invoice",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Proforma Invoice",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Purchase",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Purchase",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Purchase",
+                            "@_RESERVEDNAME": "Purchase"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Purchase Order",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Purchase Order",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Purchase Order",
+                            "@_RESERVEDNAME": "Purchase Order"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Purchase",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Pur Exp",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Pur Exp",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Receipt",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Receipt",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Receipt",
+                            "@_RESERVEDNAME": "Receipt"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Receipt Note",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Receipt Note",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Receipt Note",
+                            "@_RESERVEDNAME": "Receipt Note"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Rejections In",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Rejections In",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Rejections In",
+                            "@_RESERVEDNAME": "Rejections In"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Rejections Out",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Rejections Out",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Rejections Out",
+                            "@_RESERVEDNAME": "Rejections Out"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Reversing Journal",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Reversing Journal",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Reversing Journal",
+                            "@_RESERVEDNAME": "Reversing Journal"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Sales",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales",
+                            "@_RESERVEDNAME": "Sales"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Sales",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales/CA",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales/CA",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Sales",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales/Cr Mani",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales/Cr Mani",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Sales",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales/E",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales/E",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Sales",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales/G",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales/G",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Sales Order",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales Order",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales Order",
+                            "@_RESERVEDNAME": "Sales Order"
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Sales",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales/slip",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales/slip",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Purchase",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Slip Purchase",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Slip Purchase",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Receipt",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Slip Receipt",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Slip Receipt",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "PARENT": {
+                                "#text": "Stock Journal",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISACTIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISOPTIONAL": {
+                                "#text": "No",
+                                "@_TYPE": "Logical"
+                            },
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Stock Journal",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Stock Journal",
+                            "@_RESERVEDNAME": "Stock Journal"
+                        }
+                    ],
+                    "@_ISMSTDEPTYPE": "Yes",
+                    "@_MSTDEPTYPE": "1024"
+                }
+            }
+        }
+    }
+}
