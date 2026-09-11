@@ -16,7 +16,7 @@ const xml = `<ENVELOPE>
             <STATICVARIABLES>
                 <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
                 <SVFROMDATE TYPE="Date">1-Apr-2026</SVFROMDATE>
-                <SVTODATE TYPE="Date">1-Apr-2026</SVTODATE>
+                <SVTODATE TYPE="Date">1-Sep-2026</SVTODATE>
             </STATICVARIABLES>
 
             <TDL>
@@ -26,7 +26,7 @@ const xml = `<ENVELOPE>
 
     <TYPE>Vouchers:VoucherType</TYPE>
 
-    <CHILDOF>$$VchTypeSales</CHILDOF>
+    <CHILDOF>$$VchTypePurchase</CHILDOF>
 
     <BELONGSTO>Yes</BELONGSTO>
 
@@ -60,6 +60,7 @@ const sendToTally = async ({
     const text = await res.text();
 
     const fromTally = xmlToJson(text);
+
     const vouchers =
         fromTally.ENVELOPE.BODY.DATA.COLLECTION.VOUCHER;
 
@@ -67,54 +68,57 @@ const sendToTally = async ({
         ? vouchers
         : [vouchers];
 
-    const result = [];
-
-    VOUCHERS.forEach(VOUCHER => {
+    const result = VOUCHERS.map(VOUCHER => {
 
         const inventoryItems =
             VOUCHER["ALLINVENTORYENTRIES.LIST"];
 
-        const inventory = Array.isArray(inventoryItems)
-            ? inventoryItems
-            : [inventoryItems];
-
-        inventory.forEach(item => {
+        const inventory = (
+            Array.isArray(inventoryItems)
+                ? inventoryItems
+                : [inventoryItems]
+        ).map(item => {
 
             const batches = item["BATCHALLOCATIONS.LIST"];
 
-            const batchArray = !batches
-                ? []
-                : Array.isArray(batches)
+            let cleanBatches = [];
+
+            if (batches) {
+
+                const batchArray = Array.isArray(batches)
                     ? batches
                     : [batches];
 
-            batchArray.forEach(batch => {
-
-                result.push({
-                    DATE: VOUCHER.DATE["#text"],
-                    VOUCHERNUMBER: VOUCHER.VOUCHERNUMBER,
-                    VOUCHERTYPENAME: VOUCHER.VOUCHERTYPENAME,
-
-                    STOCKITEMNAME: item.STOCKITEMNAME,
-                    RATE: item.RATE,
-                    AMOUNT: item.AMOUNT,
-                    ACTUALQTY: item.ACTUALQTY,
-                    BILLEDQTY: item.BILLEDQTY,
-
+                cleanBatches = batchArray.map(batch => ({
                     GODOWNNAME: batch.GODOWNNAME,
                     BATCHNAME: batch.BATCHNAME,
-                    BATCHAMOUNT: batch.AMOUNT,
-                    BATCHACTUALQTY: batch.ACTUALQTY,
-                    BATCHBILLEDQTY: batch.BILLEDQTY
-                });
+                    AMOUNT: batch.AMOUNT,
+                    ACTUALQTY: batch.ACTUALQTY,
+                    BILLEDQTY: batch.BILLEDQTY
+                }));
+            }
 
-            });
+            return {
+                STOCKITEMNAME: item.STOCKITEMNAME,
+                RATE: item.RATE,
+                AMOUNT: item.AMOUNT,
+                ACTUALQTY: item.ACTUALQTY,
+                BILLEDQTY: item.BILLEDQTY,
+                BATCHES: cleanBatches
+            };
         });
+
+        return {
+            DATE: VOUCHER.DATE["#text"],
+            VOUCHERNUMBER: VOUCHER.VOUCHERNUMBER,
+            VOUCHERTYPENAME: VOUCHER.VOUCHERTYPENAME,
+            INVENTORY: inventory
+        };
     });
 
     // console.log(result[0]);
 
-    fs.writeFileSync("data.json", JSON.stringify(result));
+       fs.writeFileSync("flat.json", JSON.stringify(result));
 
     return fromTally;
 };
