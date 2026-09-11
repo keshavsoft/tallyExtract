@@ -1,7 +1,7 @@
 import { xmlToJson } from "../../../xmlToJson.js";
 import fs from "fs";
 
-const xml = `<ENVELOPE>
+const xml1 = `<ENVELOPE>
     <HEADER>
         <VERSION>1</VERSION>
         <TALLYREQUEST>EXPORT</TALLYREQUEST>
@@ -26,7 +26,7 @@ const xml = `<ENVELOPE>
 
     <TYPE>Vouchers:VoucherType</TYPE>
 
-    <CHILDOF>$$VchTypeSales</CHILDOF>
+    <CHILDOF>$$VchTypePurchase</CHILDOF>
 
     <BELONGSTO>Yes</BELONGSTO>
 
@@ -44,6 +44,61 @@ const xml = `<ENVELOPE>
     </BODY>
 
 </ENVELOPE>`;
+
+
+const xml = `<ENVELOPE>
+    <HEADER>
+        <VERSION>1</VERSION>
+        <TALLYREQUEST>EXPORT</TALLYREQUEST>
+        <TYPE>COLLECTION</TYPE>
+        <ID>KeshavStockJournal</ID>
+    </HEADER>
+
+    <BODY>
+
+        <DESC>
+
+            <STATICVARIABLES>
+                <SVEXPORTFORMAT>$$SysName:XML</SVEXPORTFORMAT>
+                <SVFROMDATE TYPE="Date">1-Apr-2026</SVFROMDATE>
+                <SVTODATE TYPE="Date">30-Apr-2026</SVTODATE>
+            </STATICVARIABLES>
+
+            <TDL>
+                <TDLMESSAGE>
+
+                 <COLLECTION NAME="KeshavStockJournal">
+
+    <TYPE>Voucher</TYPE>
+
+    <FILTER>
+        IsStockJournal
+    </FILTER>
+
+    <FETCH>
+        Date,
+        VoucherNumber,
+        VoucherTypeName,
+        PartyLedgerName,
+        AllInventoryEntries
+    </FETCH>
+
+</COLLECTION>
+
+<SYSTEM TYPE="Formulae" NAME="IsStockJournal">
+    $Parent:VoucherType:$VoucherTypeName = "Stock Journal"
+</SYSTEM>
+
+
+</TDLMESSAGE>
+            </TDL>
+
+        </DESC>
+
+    </BODY>
+
+</ENVELOPE>`;
+
 
 const sendToTally = async ({
     url = "http://localhost:9000"
@@ -114,7 +169,7 @@ const sendToTally = async ({
 
     // console.log(result[0]);
 
-    fs.writeFileSync("data.json", JSON.stringify(result));
+    fs.writeFileSync("flat.json", JSON.stringify(result));
 
     return fromTally;
 };
