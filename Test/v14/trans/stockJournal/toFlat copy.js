@@ -1,5 +1,4 @@
 import { xmlToJson } from "../../../xmlToJson.js";
-import xmlStringToArray from "../xmlStringToArray/index.js";
 import fs from "fs";
 
 const xml = `<ENVELOPE>
@@ -54,6 +53,55 @@ const xml = `<ENVELOPE>
     </BODY>
 
 </ENVELOPE>`;
+
+const xmlStringToArray = (VOUCHERS) => {
+    const result = [];
+
+    VOUCHERS.forEach(VOUCHER => {
+
+        const inventoryItems =
+            VOUCHER["ALLINVENTORYENTRIES.LIST"];
+
+        const inventory = Array.isArray(inventoryItems)
+            ? inventoryItems
+            : [inventoryItems];
+
+        inventory.forEach(item => {
+
+            const batches = item["BATCHALLOCATIONS.LIST"];
+
+            const batchArray = !batches
+                ? []
+                : Array.isArray(batches)
+                    ? batches
+                    : [batches];
+
+            batchArray.forEach(batch => {
+
+                result.push({
+                    DATE: VOUCHER.DATE["#text"],
+                    VOUCHERNUMBER: VOUCHER.VOUCHERNUMBER,
+                    VOUCHERTYPENAME: VOUCHER.VOUCHERTYPENAME,
+
+                    STOCKITEMNAME: item.STOCKITEMNAME,
+                    RATE: item.RATE,
+                    AMOUNT: item.AMOUNT,
+                    ACTUALQTY: item.ACTUALQTY,
+                    BILLEDQTY: item.BILLEDQTY,
+
+                    GODOWNNAME: batch.GODOWNNAME,
+                    BATCHNAME: batch.BATCHNAME,
+                    BATCHAMOUNT: batch.AMOUNT,
+                    BATCHACTUALQTY: batch.ACTUALQTY,
+                    BATCHBILLEDQTY: batch.BILLEDQTY
+                });
+
+            });
+        });
+    });
+
+    return result;
+};
 
 const sendToTally = async ({
     url = "http://localhost:9000"
