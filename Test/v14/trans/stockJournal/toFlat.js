@@ -1,5 +1,5 @@
 import { xmlToJson } from "../../../xmlToJson.js";
-import xmlStringToArray from "../xmlStringToArray/index.js";
+import xmlStringToArray from "../../../xmlStringToArray/v2/index.js";
 import fs from "fs";
 
 const xml = `<ENVELOPE>
