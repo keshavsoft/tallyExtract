@@ -1,0 +1,169 @@
+{
+    "ENVELOPE": {
+        "HEADER": {
+            "VERSION": 1,
+            "STATUS": 1
+        },
+        "BODY": {
+            "DESC": {
+                "CMPINFO": {
+                    "COMPANY": 0,
+                    "GROUP": 0,
+                    "LEDGER": 0,
+                    "COSTCATEGORY": 0,
+                    "COSTCENTRE": 0,
+                    "GODOWN": 0,
+                    "STOCKGROUP": 0,
+                    "STOCKCATEGORY": 0,
+                    "STOCKITEM": 0,
+                    "VOUCHERTYPE": 0,
+                    "CURRENCY": 0,
+                    "UNIT": 0,
+                    "BUDGET": 0,
+                    "CLIENTRULE": 0,
+                    "SERVERRULE": 0,
+                    "STATE": 0,
+                    "TDSRATE": 0,
+                    "TAXCLASSIFICATION": 0,
+                    "STCATEGORY": 0,
+                    "DEDUCTEETYPE": 0,
+                    "ATTENDANCETYPE": 0,
+                    "FBTCATEGORY": 0,
+                    "FBTASSESSEETYPE": 0,
+                    "TARIFFCLASSIFICATION": 0,
+                    "EXCISEDUTYCLASSIFICATION": 0,
+                    "SERIALNUMBER": 0,
+                    "ADJUSTMENTCLASSIFICATION": 0,
+                    "INCOMETAXSLAB": 0,
+                    "INCOMETAXCLASSIFICATION": 0,
+                    "LBTCLASSIFICATION": 0,
+                    "TAXUNIT": 0,
+                    "RETURNMASTER": 0,
+                    "GSTCLASSIFICATION": 0,
+                    "VOUCHERNUMBERSERIES": 0,
+                    "VOUCHER": 0
+                }
+            },
+            "DATA": {
+                "COLLECTION": {
+                    "VOUCHERTYPE": [
+                        {
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "BC Sales",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "BC Sales",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Proforma Invoice",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Proforma Invoice",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales",
+                            "@_RESERVEDNAME": "Sales"
+                        },
+                        {
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales/CA",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales/CA",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales/Cr Mani",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales/Cr Mani",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales/E",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales/E",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales/G",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales/G",
+                            "@_RESERVEDNAME": ""
+                        },
+                        {
+                            "LANGUAGENAME.LIST": {
+                                "NAME.LIST": {
+                                    "NAME": "Sales/slip",
+                                    "@_TYPE": "String"
+                                },
+                                "LANGUAGEID": {
+                                    "#text": 1033,
+                                    "@_TYPE": "Number"
+                                }
+                            },
+                            "@_NAME": "Sales/slip",
+                            "@_RESERVEDNAME": ""
+                        }
+                    ],
+                    "@_ISMSTDEPTYPE": "Yes",
+                    "@_MSTDEPTYPE": "1024"
+                }
+            }
+        }
+    }
+}
