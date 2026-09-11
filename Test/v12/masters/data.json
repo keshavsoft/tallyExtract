@@ -1,0 +1,1566 @@
+{
+    "ENVELOPE": {
+        "HEADER": {
+            "VERSION": 1,
+            "STATUS": 1
+        },
+        "BODY": {
+            "DESC": {
+                "CMPINFO": {
+                    "COMPANY": 0,
+                    "GROUP": 0,
+                    "LEDGER": 32,
+                    "COSTCATEGORY": 0,
+                    "COSTCENTRE": 0,
+                    "GODOWN": 58,
+                    "STOCKGROUP": 0,
+                    "STOCKCATEGORY": 0,
+                    "STOCKITEM": 28,
+                    "VOUCHERTYPE": 0,
+                    "CURRENCY": 1,
+                    "UNIT": 0,
+                    "BUDGET": 0,
+                    "CLIENTRULE": 0,
+                    "SERVERRULE": 0,
+                    "STATE": 0,
+                    "TDSRATE": 0,
+                    "TAXCLASSIFICATION": 0,
+                    "STCATEGORY": 0,
+                    "DEDUCTEETYPE": 0,
+                    "ATTENDANCETYPE": 0,
+                    "FBTCATEGORY": 0,
+                    "FBTASSESSEETYPE": 0,
+                    "TARIFFCLASSIFICATION": 0,
+                    "EXCISEDUTYCLASSIFICATION": 0,
+                    "SERIALNUMBER": 0,
+                    "ADJUSTMENTCLASSIFICATION": 0,
+                    "INCOMETAXSLAB": 0,
+                    "INCOMETAXCLASSIFICATION": 0,
+                    "LBTCLASSIFICATION": 0,
+                    "TAXUNIT": 0,
+                    "RETURNMASTER": 0,
+                    "GSTCLASSIFICATION": 0,
+                    "VOUCHERNUMBERSERIES": 3,
+                    "VOUCHER": 1
+                }
+            },
+            "DATA": {
+                "COLLECTION": {
+                    "VOUCHER": {
+                        "DATE": {
+                            "#text": 20260401,
+                            "@_TYPE": "Date"
+                        },
+                        "GUID": "56b158ca-11af-4ad5-bc28-c1c2428041b9-0002a86c",
+                        "REQUESTORRULE": "",
+                        "VOUCHERTYPENAME": "Sales",
+                        "VOUCHERNUMBER": 1,
+                        "REFERENCE": {
+                            "#text": "Direct",
+                            "@_TYPE": "String"
+                        },
+                        "SERIALMASTER": {
+                            "@_TYPE": "String"
+                        },
+                        "ARESERIALMASTER": {
+                            "@_TYPE": "String"
+                        },
+                        "NUMBERINGSTYLE": "Auto Retain",
+                        "PERSISTEDVIEW": "Invoice Voucher View",
+                        "ISDELETED": "No",
+                        "ASORIGINAL": "No",
+                        "ISDEEMEDPOSITIVE": {
+                            "#text": "Yes",
+                            "@_TYPE": "Logical"
+                        },
+                        "ISINVOICE": "Yes",
+                        "ASPAYSLIP": "No",
+                        "ISDELETEDVCHRETAINED": "No",
+                        "ISNEGISPOSSET": {
+                            "#text": "Yes",
+                            "@_TYPE": "Logical"
+                        },
+                        "MASTERID": {
+                            "#text": 174188,
+                            "@_TYPE": "Number"
+                        },
+                        "VOUCHERKEY": {
+                            "#text": 198049531953265,
+                            "@_TYPE": "Number"
+                        },
+                        "VOUCHERRETAINKEY": {
+                            "#text": 32709,
+                            "@_TYPE": "Number"
+                        },
+                        "REUSEHOLEID": {
+                            "#text": 0,
+                            "@_TYPE": "Number"
+                        },
+                        "VOUCHERNUMBERSERIES": {
+                            "#text": "Default",
+                            "@_TYPE": "String"
+                        },
+                        "ALLINVENTORYENTRIES.LIST": [
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "LEAD",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "260.00/kgs",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 780,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "3.000 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "3.000 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": [
+                                    {
+                                        "BATCHNAME": {
+                                            "#text": "20gms-Rs.234/-",
+                                            "@_TYPE": "String"
+                                        },
+                                        "INDENTNO": {
+                                            "#text": " Not Applicable",
+                                            "@_TYPE": "String"
+                                        },
+                                        "ORDERNO": {
+                                            "#text": " Not Applicable",
+                                            "@_TYPE": "String"
+                                        },
+                                        "TRACKINGNUMBER": {
+                                            "#text": " Not Applicable",
+                                            "@_TYPE": "String"
+                                        },
+                                        "ADDLAMOUNT": {
+                                            "@_TYPE": "Amount"
+                                        },
+                                        "BATCHDISCOUNT": {
+                                            "#text": 0,
+                                            "@_TYPE": "Number"
+                                        },
+                                        "AMOUNT": {
+                                            "#text": 520,
+                                            "@_TYPE": "Amount"
+                                        },
+                                        "ACTUALQTY": {
+                                            "#text": "2.000 kgs",
+                                            "@_TYPE": "Quantity"
+                                        },
+                                        "BILLEDQTY": {
+                                            "#text": "2.000 kgs",
+                                            "@_TYPE": "Quantity"
+                                        },
+                                        "BATCHRATE": {
+                                            "#text": "260.00/kgs",
+                                            "@_TYPE": "Rate"
+                                        }
+                                    },
+                                    {
+                                        "BATCHNAME": {
+                                            "#text": "10gms-Rs.240/-",
+                                            "@_TYPE": "String"
+                                        },
+                                        "INDENTNO": {
+                                            "#text": " Not Applicable",
+                                            "@_TYPE": "String"
+                                        },
+                                        "ORDERNO": {
+                                            "#text": " Not Applicable",
+                                            "@_TYPE": "String"
+                                        },
+                                        "TRACKINGNUMBER": {
+                                            "#text": " Not Applicable",
+                                            "@_TYPE": "String"
+                                        },
+                                        "ADDLAMOUNT": {
+                                            "@_TYPE": "Amount"
+                                        },
+                                        "BATCHDISCOUNT": {
+                                            "#text": 0,
+                                            "@_TYPE": "Number"
+                                        },
+                                        "AMOUNT": {
+                                            "#text": 260,
+                                            "@_TYPE": "Amount"
+                                        },
+                                        "ACTUALQTY": {
+                                            "#text": "1.000 kgs",
+                                            "@_TYPE": "Quantity"
+                                        },
+                                        "BILLEDQTY": {
+                                            "#text": "1.000 kgs",
+                                            "@_TYPE": "Quantity"
+                                        },
+                                        "BATCHRATE": {
+                                            "#text": "260.00/kgs",
+                                            "@_TYPE": "Rate"
+                                        }
+                                    }
+                                ],
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 780,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "F.LINE PKTS",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "30.00/Nos",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 30,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "1 Nos",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "1 Nos",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "0.60-Gd-Rs.10.27-Rs.17/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 30,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "1 Nos",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "1 Nos",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "30.00/Nos",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 30,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "TINSEL",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "20.00/Nos",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 20,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "1 Nos",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "1 Nos",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "Mix Color-Praise-Rs.5/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 20,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "1 Nos",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "1 Nos",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "20.00/Nos",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 20,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "P.SHEET",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "186.34/kgs",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 600.01,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "3.220 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "3.220 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "1mtr-Hari-Rs.142/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 600.01,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "3.220 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "3.220 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "186.34/kgs",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 600.01,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "30-MADHURAM-48\"",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "100.00/mtr",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 200,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "2.00 mtr",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "2.00 mtr",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "Blue-SHQ-48\"-Pf-Rs.67/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 200,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "2.00 mtr",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "2.00 mtr",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "100.00/mtr",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 200,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "Velcro Sticker",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "18.75/mtr",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 150,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "8.00 mtr",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "8.00 mtr",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "20mm-Blk-Rs.10/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 150,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "8.00 mtr",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "8.00 mtr",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "18.75/mtr",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 150,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "GD Connected",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "633.33/kgs",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 190,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "0.300 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "0.300 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "Conn-Rs.370/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 190,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "0.300 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "0.300 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "633.33/kgs",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 190,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "LEAD",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "250.00/kgs",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 500,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "2.000 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "2.000 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "50gms-Rs.234/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 500,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "2.000 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "2.000 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "250.00/kgs",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 500,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "Big Hole-Knitted Fabric Mtrs",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "40.00/mtr",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 240,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "6.00 mtr",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "6.00 mtr",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "Bighole-RK-Rs.13/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 240,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "6.00 mtr",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "6.00 mtr",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "40.00/mtr",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 240,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "Nylon Reels Nos(Small)",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "70.00/Nos",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 70,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "1 Nos",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "1 Nos",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "100gms-Shy-Rs.45/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 70,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "1 Nos",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "1 Nos",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "70.00/Nos",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 70,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "LEAD",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "260.00/kgs",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 260,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "1.000 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "1.000 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "50gms-Rs.234/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 260,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "1.000 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "1.000 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "260.00/kgs",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 260,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "LEAD",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "260.00/kgs",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 520,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "2.000 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "2.000 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "20gms-Rs.234/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 520,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "2.000 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "2.000 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "260.00/kgs",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 520,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "LEAD",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "300.00/kgs",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 120,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "0.400 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "0.400 kgs",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "20gms-Rs.234/-",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 120,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "0.400 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "0.400 kgs",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "300.00/kgs",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 120,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            },
+                            {
+                                "STOCKITEMNAME": {
+                                    "#text": "Water Proof Tape Mtrs",
+                                    "@_TYPE": "String"
+                                },
+                                "ADDLAMOUNT": {
+                                    "@_TYPE": "Amount"
+                                },
+                                "ISDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "ISLASTDEEMEDPOSITIVE": {
+                                    "#text": "No",
+                                    "@_TYPE": "Logical"
+                                },
+                                "RATE": {
+                                    "#text": "33.33/mtr",
+                                    "@_TYPE": "Rate"
+                                },
+                                "DISCOUNT": {
+                                    "#text": 0,
+                                    "@_TYPE": "Number"
+                                },
+                                "AMOUNT": {
+                                    "#text": 499.95,
+                                    "@_TYPE": "Amount"
+                                },
+                                "ACTUALQTY": {
+                                    "#text": "15.00 mtr",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BILLEDQTY": {
+                                    "#text": "15.00 mtr",
+                                    "@_TYPE": "Quantity"
+                                },
+                                "BATCHALLOCATIONS.LIST": {
+                                    "BATCHNAME": {
+                                        "#text": "Maruthi-2\"-5mtr Roll-Rs.16/- Mtr",
+                                        "@_TYPE": "String"
+                                    },
+                                    "INDENTNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ORDERNO": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "TRACKINGNUMBER": {
+                                        "#text": " Not Applicable",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ADDLAMOUNT": {
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BATCHDISCOUNT": {
+                                        "#text": 0,
+                                        "@_TYPE": "Number"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 499.95,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "ACTUALQTY": {
+                                        "#text": "15.00 mtr",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BILLEDQTY": {
+                                        "#text": "15.00 mtr",
+                                        "@_TYPE": "Quantity"
+                                    },
+                                    "BATCHRATE": {
+                                        "#text": "33.33/mtr",
+                                        "@_TYPE": "Rate"
+                                    }
+                                },
+                                "ACCOUNTINGALLOCATIONS.LIST": {
+                                    "LEDGERNAME": {
+                                        "#text": "Sales",
+                                        "@_TYPE": "String"
+                                    },
+                                    "ISDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "ISLASTDEEMEDPOSITIVE": {
+                                        "#text": "No",
+                                        "@_TYPE": "Logical"
+                                    },
+                                    "AMOUNT": {
+                                        "#text": 499.95,
+                                        "@_TYPE": "Amount"
+                                    },
+                                    "BILLALLOCATIONS.LIST": "",
+                                    "TAXOBJECTALLOCATIONS.LIST": "",
+                                    "COSTTRACKALLOCATIONS.LIST": ""
+                                }
+                            }
+                        ],
+                        "LEDGERENTRIES.LIST": {
+                            "LEDGERNAME": {
+                                "#text": "Cash",
+                                "@_TYPE": "String"
+                            },
+                            "ISDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "ISLASTDEEMEDPOSITIVE": {
+                                "#text": "Yes",
+                                "@_TYPE": "Logical"
+                            },
+                            "AMOUNT": {
+                                "#text": -4179.96,
+                                "@_TYPE": "Amount"
+                            },
+                            "BILLALLOCATIONS.LIST": "",
+                            "COSTTRACKALLOCATIONS.LIST": ""
+                        },
+                        "@_REMOTEID": "56b158ca-11af-4ad5-bc28-c1c2428041b9-0002a86c",
+                        "@_VCHKEY": "56b158ca-11af-4ad5-bc28-c1c2428041b9-0000b420:00000071",
+                        "@_VCHTYPE": "Sales",
+                        "@_OBJVIEW": "Invoice Voucher View"
+                    },
+                    "@_ISCMPDEPTYPE": "Yes",
+                    "@_CMPLOCUS": "4",
+                    "@_CMPDEPTYPE": "64"
+                }
+            }
+        }
+    }
+}
