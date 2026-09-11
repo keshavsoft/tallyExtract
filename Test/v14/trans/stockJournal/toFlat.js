@@ -1,5 +1,5 @@
 import { xmlToJson } from "../../../xmlToJson.js";
-import xmlStringToArray from "../../../xmlStringToArray/v2/index.js";
+import xmlStringToArray from "../../../xmlStringToArray/v3/index.js";
 import fs from "fs";
 
 const xml = `<ENVELOPE>
@@ -77,7 +77,7 @@ const sendToTally = async ({
         ? vouchers
         : [vouchers];
 
-    const result = xmlStringToArray  (VOUCHERS)
+    const result = xmlStringToArray({ inVouchersArray: VOUCHERS });
 
     fs.writeFileSync("flat.json", JSON.stringify(result));
 
